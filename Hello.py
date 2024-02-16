@@ -6,7 +6,7 @@ st.title("🐶Dog Nutrition assistant")
 st.write("Paw-sitively Informed 🐾: Your Go-To Hub for Canine Nutrition Q&A with Our Expert Agents! 🐕💬")
 
 api_key_user = st.text_input('Enter your OpenAI API key', 'SH++++', type = 'password')
-
+st.write(api_key_user)
 client = OpenAI(api_key=api_key_user)
 
 if "openai_model" not in st.session_state:
